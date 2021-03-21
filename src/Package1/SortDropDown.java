@@ -52,5 +52,6 @@ public class SortDropDown {
 		}else{
 			System.out.println("Options are not sorted");
 		}				
+		System.out.println("Completed");
 	}
 }
