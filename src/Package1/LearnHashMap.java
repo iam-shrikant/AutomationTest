@@ -1,4 +1,4 @@
-package Package1;
+  package Package1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class LearnHashMap {
 		
 		//check key is presetn or not\
 		
-		if(hm.containsKey(1)) {
+		/*if(hm.containsKey(1)) {
 			String val = hm.get(1);
 			System.out.println("Value for key 1 "+val);
 		}
@@ -25,6 +25,29 @@ public class LearnHashMap {
 		for(Map.Entry<Integer, String> e : hm.entrySet()) {
 			System.out.println("Key :"+e.getKey()+" Value :"+e.getValue());
 		}
+		*/
+		HashMap<String,Integer> hmn = new HashMap<>();
+		
+		String s = "This This is is a map";
+		
+		String[] s2 = s.split(" ");
+		for(String ss : s2) {
+			//System.out.println(ss);
+			
+			if(hmn.containsKey(ss)) {
+				
+				int count = hmn.get(ss)+1;
+				
+				hmn.put(ss, count);
+			}else {
+				hmn.put(ss, 1);
+			}
+		}
+		
+		for(Map.Entry<String, Integer> e : hmn.entrySet()) {
+			System.out.println("Key :"+e.getKey()+" Value :"+e.getValue());
+		}
+		
 	}
 
 }
