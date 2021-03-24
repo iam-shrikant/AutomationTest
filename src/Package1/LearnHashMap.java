@@ -12,6 +12,8 @@ public class LearnHashMap {
 		hm.put(1, "Shrikant");
 		hm.put(2, "Aishwarya");
 		hm.put(3, "Ashish");
+		hm.put(4, "shrikant");
+		hm.put(null, "shrikant_null");
 		
 		System.out.println("Hashmap Size"+hm.size());
 		
@@ -20,12 +22,12 @@ public class LearnHashMap {
 		/*if(hm.containsKey(1)) {
 			String val = hm.get(1);
 			System.out.println("Value for key 1 "+val);
-		}
+		}*/
 		
 		for(Map.Entry<Integer, String> e : hm.entrySet()) {
 			System.out.println("Key :"+e.getKey()+" Value :"+e.getValue());
 		}
-		*/
+		
 		HashMap<String,Integer> hmn = new HashMap<>();
 		
 		String s = "This This is is a map";
