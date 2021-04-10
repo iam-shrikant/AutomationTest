@@ -7,6 +7,14 @@ public class LearnHashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		HashMap<String,String> hmk = new HashMap<>();
+		
+		hmk.put("SHRIKANT", "all caps");
+		hmk.put("shrikant", "all small");
+				
+		System.out.println("hmk: "+hmk.toString());
+		
 		HashMap<Integer,String> hm = new HashMap<>();
 		
 		hm.put(1, "Shrikant");
@@ -48,8 +56,7 @@ public class LearnHashMap {
 		
 		for(Map.Entry<String, Integer> e : hmn.entrySet()) {
 			System.out.println("Key :"+e.getKey()+" Value :"+e.getValue());
-		}
-		
+		}		
 	}
 
 }
